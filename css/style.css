@@ -2,9 +2,8 @@ body {
   background-color: #0a090a !important;
   color: white;
   font-family: Roboto, sans-serif;
-  background: url(../assets/main-bg.png) no-repeat;
-  background-size: contain;
-  background-position: top center;
+  background: url(../assets/main-bg.png) no-repeat top center;
+  background-size: 100%;
 }
 
 .container {
@@ -219,7 +218,7 @@ body {
 
 .full-content {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .tabs-content {
@@ -227,7 +226,7 @@ body {
   margin-right: 70px;
 }
 
-.visible{
+.visible {
   display: block;
 }
 
@@ -313,6 +312,7 @@ body {
   }
   .full-content {
     flex-wrap: wrap;
+    justify-content: center;
   }
   .tabs-content {
     margin-bottom: 5%;
@@ -329,6 +329,10 @@ body {
 }
 
 @media (max-width: 780px) {
+  body {
+    background-size: 100vh;
+    background-position: top center;
+  }
   .container {
     max-width: 540px;
   }
@@ -339,7 +343,7 @@ body {
     flex-basis: 33%;
     line-height: 3;
   }
-  .tabs-content{
+  .tabs-content {
     margin-right: 0;
   }
 }
@@ -356,30 +360,31 @@ body {
     order: 3;
     margin-top: 5%;
   }
-  .content{
+  .content {
     flex-wrap: wrap;
   }
-  .short-info{
+  .short-info {
     margin-bottom: 5%;
   }
-  .actors-list, .actors-title{
+  .actors-list,
+  .actors-title {
     display: none;
   }
 
-  .movie-info{
+  .movie-info {
     flex-wrap: wrap;
   }
-  .play{
+  .play {
     flex-basis: 100%;
     margin-top: 5%;
   }
-  .short-info{
+  .short-info {
     margin-right: 0;
   }
-  .button{
+  .button {
     width: 100%;
   }
-  .poster{
+  .poster {
     margin-top: -20%;
     display: inline-block;
     width: 100%;
